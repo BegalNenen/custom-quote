@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta property="og:title" content="Kutipanmu">
+    <meta name="description" content="Buat, Screenshot, dan Bagikan Kutipanmu">
+    <meta property="og:description" content="Buat, Screenshot, dan Bagikan Kutipanmu">
+    <meta property="og:site_name" content="Kutipanmu">
+    <meta property="og:image" content="../assets/logo.png">
+    <link rel="icon" type="image/x-icon" href="../assets/icon.png">
+    <title>Kutipanmu - Buat, Screenshot, dan Bagikan Kutipanmu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+      body {
+        background: #fcfcfc;
+        font-family: 'Actor', sans-serif;
+        padding-top: 5%;
+      }
+
+      h4 {
+        font-family: 'Secular One', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body shadow-sm">
+          <h4 class="card-title text-center">Custom Quote's</h4>
+          <p class="card-text text-center text-muted">
+            <small>Buat, Screenshot dan Bagikan Kutipanmu.</small>
+          </p>
+          <form action="/result" method="post">
+            <div class="mb-3">
+              <label class="form-label">Nama</label>
+              <input type="text" name="author" class="form-control" required />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Kutipan</label>
+              <textarea type="text" name="quotes" class="form-control" required /></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">BUAT</button>
+          </form>
+        </div>
+      </div>
+  </body>
