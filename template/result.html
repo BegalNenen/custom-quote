@@ -23,7 +23,7 @@
             <div class="card" style="border-radius: 15px;">
               <div class="card-body p-5">
                 <div class="text-center mb-4 pb-2">
-                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-quotes/bulb.webp" alt="Bulb" width="100">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-quotes/bulb.webp" alt="Bulb" width="100" onclick="openFullscreen();">
                 </div>
                 <figure class="text-center mb-0">
                   <blockquote class="blockquote">
@@ -43,5 +43,20 @@
         </div>
       </div>
     </section>
+    <script>
+      var elem = document.documentElement;
+
+      function openFullscreen() {
+        if (elem.requestFullscreen) {
+          elem.requestFullscreen();
+        }
+      }
+
+      function closeFullscreen() {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+      }
+    </script>
   </body>
 </html>
